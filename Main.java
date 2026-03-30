@@ -1,13 +1,13 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Vetor meuVetor = new Vetor(5);
-        meuVetor.inserir(2);
-        meuVetor.inserir(4);
-        meuVetor.inserir(6);
-        meuVetor.inserir(12);
-        meuVetor.inserir(21);
-        meuVetor.remover(4);
-        System.out.println(meuVetor);
-
+        ListaEncadeada lista = new ListaEncadeada();
+        lista.inserirNoInicio(14);
+        lista.inserirNoInicio(98);
+        lista.inserirNoInicio(7);
+        lista.inserirNoInicio(47);
+        lista.removerNoInicio();
+        System.out.println(lista.inicio);
     }
 }
