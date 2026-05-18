@@ -1,11 +1,19 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class No {
 
-    int valor;
+    String valor;
+    No pai;
+    List<No> filhos;
 
-    No proximo;
-
-    public No(int valor) {
+    public No(String valor, No pai) {
         this.valor = valor;
-        proximo = null;
+        this.pai = pai;
+        filhos = new ArrayList<No>();
+    }
+
+    public void adicionarFilho(No filho) {
+        filhos.add(filho);
     }
 }
